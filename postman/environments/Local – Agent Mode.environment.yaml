@@ -1,4 +1,4 @@
-name: Local – Agent Mode
+name: Local - Agent Mode
 values:
   - key: baseUrl
     value: http://localhost:4501
