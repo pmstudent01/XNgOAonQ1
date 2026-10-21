@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{baseUrl}}/vehicles/:id"
+method: DELETE
+headers:
+  Accept: application/json
+pathVariables:
+  - key: id
+    value: "1"
+    $type: |-
+      {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "value"
+        ]
+      }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code is 204", function () {
+        pm.response.to.have.status(204);
+      });
+    language: text/javascript
+examples: ./.resources/Delete a vehicle.resources/examples
+order: 4000

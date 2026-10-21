@@ -1,0 +1,10 @@
+# App-local secrets and env
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
