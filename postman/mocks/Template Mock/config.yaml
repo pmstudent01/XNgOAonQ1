@@ -1,0 +1,9 @@
+name: Template Mock
+id: 01a15f90-f46f-750b-8904-26f396e0c1a4
+protocol: http
+associations: []
+scenarios:
+  - name: default
+    id: 01a15fa9-7258-734a-b5f3-d1a2f6d679fd
+    path: ./default.js
+    default: true

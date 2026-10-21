@@ -1,0 +1,6 @@
+# The Vehicle Service app depends on the Postman-generated SDK.
+# Installed from the local path (editable) so app imports resolve the SDK.
+-e ./postman/sdks/Collections SDKs/Vehicle Service Collection/python
+
+# Optional: load configuration from a local .env file.
+python-dotenv>=1.0.0
